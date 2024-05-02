@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="main">        
+        <div class="header"><a href="index.html">
+            <div class="header_left">FUTO  SICT <span>ADMIN.</span></div>  </a>      
+        </div>
+        <h2>USERS</h2>
+        <div class="info">
+            <span>Total Users: <label id="total"></label></span>
+            <span>Total Confirmed Users: <label id="con"></label></span>
+            <span>Total UnConfirmed Users: <label id="un"></label></span>
+        </div>
+        <div class="cont">
+            <div id="loading">
+                <div class="loader"></div>
+                          </div>
+            <table id="table">
+      
+            
+            </table>
+        </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

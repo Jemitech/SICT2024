@@ -1,0 +1,144 @@
+html, body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #000232;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    user-select: none;
+    overflow-x: hidden;
+    color: aliceblue;
+}     
+.main{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.header{
+    width: 100%;
+    background: #000232;
+    height: 70px;
+    border-bottom: 1px solid #716f6f;
+    display: flex;
+    z-index: 9;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left{
+    padding-left: 60px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.header_left span{
+    font-weight: bold;
+}
+
+#loading {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #loading img{
+    width: 50px;
+    background: transparent;
+  }
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .info{
+    padding-left: 120px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  
+  th, td {
+    text-align: left;
+  }
+  td{
+    padding: 4px;
+  }
+  th{
+    padding: 8px;
+  }
+  .head{
+    border: 1px solid rgb(191, 188, 188);
+    width: max-content;
+    height: max-content;
+    border-radius: 12px;
+  }  
+  tr{
+    border: 1px solid rgb(191, 188, 188);
+    width: max-content;
+    height: max-content;
+    border-top: transparent;
+    border-radius: 12px;
+  }
+  
+
+  tr:nth-child(even) {background-color: #04083d;}
+
+  h2{
+    padding-left: 120px;
+  }
+  .cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stat{
+    color: rgba(172, 255, 47, 0.623);
+    font-style: italic;
+    font-size: 12px;
+  }
+  td button{
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+    font-size: 13px;
+    background: greenyellow;
+    color: black;
+  }
+  td button:hover{
+    background: rgb(108, 162, 27);
+  }
+  /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 100px;
+    height: 40px;
+    --g: radial-gradient(farthest-side,#0000 calc(95% - 3px),#fff calc(100% - 3px) 98%,#0000 101%) no-repeat;
+    background: var(--g), var(--g), var(--g);
+    background-size: 30px 30px;
+    animation: l9 1s infinite alternate;
+  }
+  @keyframes l9 {
+    0% {
+      background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+    20% {
+      background-position: 0 0, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0 100%, 50% 0, 100% 50%;
+    }
+    60% {
+      background-position: 0 50%, 50% 100%, 100% 0;
+    }
+    80% {
+      background-position: 0 50%, 50% 50%, 100% 100%;
+    }
+    100% {
+      background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+  }
