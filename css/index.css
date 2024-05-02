@@ -16,6 +16,10 @@ html, body{
     flex-direction: column;
     position: relative;
 }
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 .header{
     width: 100%;
     background: #000232;
